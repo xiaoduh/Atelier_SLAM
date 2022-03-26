@@ -30,7 +30,7 @@ public class Accueil extends JFrame {
             		FormPersonnel ajouterPersonnel = new FormPersonnel();
             		ajouterPersonnel.setVisible(true);
     				// On cache l'ancienne fenêtre.
-    				Accueil.this.setVisible(false);
+    				Accueil.this.setVisible(true);
             	}
             });
             btnButtonAjouterPersonnel.setBounds(10, 51, 144, 23);
@@ -42,7 +42,7 @@ public class Accueil extends JFrame {
             		FormAbsence ajouterAbsence = new FormAbsence();
             		ajouterAbsence.setVisible(true);
     				// On cache l'ancienne fenêtre.
-    				Accueil.this.setVisible(false);
+    				Accueil.this.setVisible(true);
             	}
             });
             btnButtonAjouterAbsence.setBounds(230, 51, 144, 23);
