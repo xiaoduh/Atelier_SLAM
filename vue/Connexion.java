@@ -1,11 +1,11 @@
+package vue;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.UIManager;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
+
 
 
 public class Connexion extends JFrame {
@@ -25,15 +25,4 @@ public class Connexion extends JFrame {
 
     }
     
-    public static void main(String[] args) throws Exception{
-        // Appliquer un look'n feel
-        UIManager.setLookAndFeel(new NimbusLookAndFeel());
-
-
-        // Start my window
-        Connexion maConnexion = new Connexion();
-        maConnexion.setVisible(true);
-
-
-    }
 }
