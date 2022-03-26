@@ -22,16 +22,16 @@ public class main {
         maConnexion.setVisible(true);
 
         Accueil monAccueil = new Accueil();
-        monAccueil.setVisible(true);
+        monAccueil.setVisible(false);
 
         Absence lesAbsences = new Absence();
-        lesAbsences.setVisible(true);
+        lesAbsences.setVisible(false);
 
         FormAbsence ajouterAbsence = new FormAbsence();
-        ajouterAbsence.setVisible(true);
+        ajouterAbsence.setVisible(false);
 
         FormPersonnel ajouterPersonnel = new FormPersonnel();
-        ajouterPersonnel.setVisible(true);
+        ajouterPersonnel.setVisible(false);
         
 
 
