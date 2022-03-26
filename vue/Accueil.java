@@ -4,6 +4,7 @@ package vue;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import java.awt.BorderLayout;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTable;
@@ -23,8 +24,8 @@ public class Accueil extends JFrame {
             JPanel contentPane = (JPanel) this.getContentPane();
             getContentPane().setLayout(null);
             
-            JButton btnButton = new JButton("Ajouter du personnel");
-            btnButton.addActionListener(new ActionListener() {
+            JButton btnButtonAjouterPersonnel = new JButton("Ajouter du personnel");
+            btnButtonAjouterPersonnel.addActionListener(new ActionListener() {
             	public void actionPerformed(ActionEvent e) {
             		FormPersonnel ajouterPersonnel = new FormPersonnel();
             		ajouterPersonnel.setVisible(true);
@@ -32,11 +33,11 @@ public class Accueil extends JFrame {
     				Accueil.this.setVisible(false);
             	}
             });
-            btnButton.setBounds(10, 51, 144, 23);
-            getContentPane().add(btnButton);
+            btnButtonAjouterPersonnel.setBounds(10, 51, 144, 23);
+            getContentPane().add(btnButtonAjouterPersonnel);
             
-            JButton btnButton2 = new JButton("Ajouter une absence");
-            btnButton2.addActionListener(new ActionListener() {
+            JButton btnButtonAjouterAbsence = new JButton("Ajouter une absence");
+            btnButtonAjouterAbsence.addActionListener(new ActionListener() {
             	public void actionPerformed(ActionEvent e) {
             		FormAbsence ajouterAbsence = new FormAbsence();
             		ajouterAbsence.setVisible(true);
@@ -44,8 +45,8 @@ public class Accueil extends JFrame {
     				Accueil.this.setVisible(false);
             	}
             });
-            btnButton2.setBounds(230, 51, 144, 23);
-            getContentPane().add(btnButton2);
+            btnButtonAjouterAbsence.setBounds(230, 51, 144, 23);
+            getContentPane().add(btnButtonAjouterAbsence);
             
             table = new JTable();
             table.setBounds(10, 85, 364, 265);
